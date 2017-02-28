@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace ocpp_cliente_conexion
 {
-    public class Class1
+    class Cliente
     {
+        public string Nombre { get; set; }
+        public string Apellido { get; set; }
     }
 }
