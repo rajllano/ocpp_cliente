@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ocpp_cliente_modelo.Electrolinera">
+    <Position X="2.75" Y="4.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAQAEAAAAEAAAQEAAAQAAAACAAAgAAAAAAEg=</HashCode>
+      <FileName>Electrolinera.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Configuracion" />
+      <Property Name="ColeccionSensor" />
+      <Property Name="ColeccionLogs" />
+      <Property Name="ColeccionTags" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ocpp_cliente_modelo.Simulador">
+    <Position X="2.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Simulador.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ColeccionElectrolinera" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ocpp_cliente_modelo.Coleccion">
+    <Position X="6.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAEQAgAAAAAEAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Coleccion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ocpp_cliente_modelo.ColeccionElectrolinera">
+    <Position X="2.5" Y="2.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ColeccionElectrolinera.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Electrolinera" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ocpp_cliente_modelo.Configuracion">
+    <Position X="6.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAIAAAAAAAAAAAAAAAAAAAgAAAAAACACAA=</HashCode>
+      <FileName>Configuracion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ocpp_cliente_modelo.ColeccionSensor">
+    <Position X="3" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ColeccionSensor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ocpp_cliente_modelo.Sensor">
+    <Position X="3" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAgAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Sensor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ocpp_cliente_modelo.ColeccionLogs">
+    <Position X="0.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ColeccionLogs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ocpp_cliente_modelo.ColeccionTags">
+    <Position X="5.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ColeccionTags.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="ocpp_cliente_modelo.EnumEstado">
+    <Position X="0.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAg=</HashCode>
+      <FileName>EnumEstado.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
