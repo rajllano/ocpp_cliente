@@ -41,7 +41,7 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="ocpp_cliente_modelo.Configuracion">
-    <Position X="6.25" Y="4.75" Width="1.5" />
+    <Position X="7.5" Y="4.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAgAAAAAAIAAAAAAAAAAAAAAAAAAAgAAAAAACACAA=</HashCode>
       <FileName>Configuracion.cs</FileName>
