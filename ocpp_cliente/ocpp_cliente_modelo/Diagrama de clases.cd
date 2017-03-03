@@ -78,7 +78,7 @@
   <Enum Name="ocpp_cliente_modelo.EnumEstado">
     <Position X="0.5" Y="5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAABAAAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAg=</HashCode>
+      <HashCode>AAAAAAABAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAg=</HashCode>
       <FileName>EnumEstado.cs</FileName>
     </TypeIdentifier>
   </Enum>
