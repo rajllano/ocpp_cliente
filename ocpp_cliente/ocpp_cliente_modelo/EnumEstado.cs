@@ -9,6 +9,7 @@ namespace ocpp_cliente_modelo
     {
         ERROR = 1,
         OPERATIVA = 2,
-        CARGANDO = 3
+        CARGANDO = 3,
+        DESOCUPADA
     }
 }
