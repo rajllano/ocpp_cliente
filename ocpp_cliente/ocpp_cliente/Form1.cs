@@ -35,5 +35,10 @@ namespace ocpp_cliente
             [DllImport("kernel32.dll")]
             public static extern Boolean FreeConsole();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
