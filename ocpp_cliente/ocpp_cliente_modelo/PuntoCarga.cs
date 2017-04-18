@@ -5,7 +5,7 @@ using System.Text;
 
 namespace ocpp_cliente_modelo
 {
-    public class Electrolinera
+    public class PuntoCarga : IClonacion<PuntoCarga>
     {
         public string Marca
         {
@@ -79,42 +79,6 @@ namespace ocpp_cliente_modelo
             }
         }
 
-        public EnumEstado Estado
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-
-            set
-            {
-            }
-        }
-
-        public Configuracion Configuracion
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-
-            set
-            {
-            }
-        }
-
-        public ColeccionSensor ColeccionSensor
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-
-            set
-            {
-            }
-        }
-
         public ColeccionLogs ColeccionLogs
         {
             get
@@ -137,6 +101,23 @@ namespace ocpp_cliente_modelo
             set
             {
             }
+        }
+
+        public EEstadoPuntoCarga EEstadoPuntoCarga
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+
+            set
+            {
+            }
+        }
+
+        public PuntoCarga Clonar()
+        {
+            throw new NotImplementedException();
         }
     }
 }

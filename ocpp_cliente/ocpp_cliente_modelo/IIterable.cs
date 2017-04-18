@@ -5,7 +5,8 @@ using System.Text;
 
 namespace ocpp_cliente_modelo
 {
-    public class ColeccionSensor
+    public interface IIterable<I>
     {
+        IIterador<I> Iterador();
     }
 }

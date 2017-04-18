@@ -5,9 +5,11 @@ using System.Text;
 
 namespace ocpp_cliente_modelo
 {
-    public class Configuracion
+    public class Reserva
     {
-        public string IpLocal
+
+
+        public int Id
         {
             get
             {
@@ -19,7 +21,7 @@ namespace ocpp_cliente_modelo
             }
         }
 
-        public string PuertoLocal
+        public PuntoCarga PuntoCarga
         {
             get
             {
@@ -31,7 +33,7 @@ namespace ocpp_cliente_modelo
             }
         }
 
-        public string IpServidor
+        public System.DateTime FechaHora
         {
             get
             {
@@ -43,7 +45,7 @@ namespace ocpp_cliente_modelo
             }
         }
 
-        public string PuertoServidor
+        public int Tiempo
         {
             get
             {
@@ -55,10 +57,43 @@ namespace ocpp_cliente_modelo
             }
         }
 
-        /// <summary>
-        /// Intervalo de tiempo en segundos para notificar el estado al sistema central
-        /// </summary>
-        public int Heartbeat
+        public double ValorRecarga
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+
+            set
+            {
+            }
+        }
+
+        public double EnergiaRecarga
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+
+            set
+            {
+            }
+        }
+
+        public string Tag
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+
+            set
+            {
+            }
+        }
+
+        public bool Estado
         {
             get
             {

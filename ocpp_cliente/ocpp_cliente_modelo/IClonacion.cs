@@ -5,11 +5,8 @@ using System.Text;
 
 namespace ocpp_cliente_modelo
 {
-    public enum EnumEstado
+    public interface IClonacion<T>
     {
-        ERROR = 1,
-        OPERATIVA = 2,
-        CARGANDO = 3,
-        DESOCUPADA
+        T Clonar();
     }
 }

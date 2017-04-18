@@ -5,7 +5,7 @@ using System.Text;
 
 namespace ocpp_cliente_modelo
 {
-    public class ColeccionTags
+    public interface IColeccionGenerica<T, I> : IColeccion<T>, IObservable, IIterable<I>
     {
     }
 }

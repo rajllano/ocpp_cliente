@@ -5,9 +5,11 @@ using System.Text;
 
 namespace ocpp_cliente_modelo
 {
-    public class Sensor
+    public class Cliente
     {
-        public string Nombre
+        private static Cliente Instancia = null;
+
+        public ColeccionEstacion ColeccionEstacion
         {
             get
             {
@@ -19,16 +21,12 @@ namespace ocpp_cliente_modelo
             }
         }
 
-        public string Valor
+        public static Cliente getInstancia()
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
+            if (Instancia == null)
+                Instancia = new ocpp_cliente_modelo.Cliente();
 
-            set
-            {
-            }
+            return Instancia;
         }
     }
 }

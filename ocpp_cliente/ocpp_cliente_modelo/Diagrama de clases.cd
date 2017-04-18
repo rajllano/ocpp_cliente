@@ -1,85 +1,120 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="ocpp_cliente_modelo.Electrolinera">
-    <Position X="2.75" Y="4.5" Width="1.75" />
+  <Class Name="ocpp_cliente_modelo.PuntoCarga">
+    <Position X="9.5" Y="6.25" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAAAABAAAQAEAAAAEAAAQEAAAQAAAACAAAgAAAAAAEg=</HashCode>
-      <FileName>Electrolinera.cs</FileName>
+      <HashCode>AAAAABAAAAAEAAAAEAABQAAAAQAAAACAAAhAAAAAAEA=</HashCode>
+      <FileName>PuntoCarga.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="Configuracion" />
-      <Property Name="ColeccionSensor" />
-      <Property Name="ColeccionLogs" />
-      <Property Name="ColeccionTags" />
+      <Property Name="EEstadoPuntoCarga" />
     </ShowAsAssociation>
+    <Lollipop Position="0.2" />
   </Class>
-  <Class Name="ocpp_cliente_modelo.Simulador">
-    <Position X="2.75" Y="0.75" Width="1.5" />
+  <Class Name="ocpp_cliente_modelo.ColeccionPuntoCarga">
+    <Position X="9.5" Y="3.25" Width="2" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Simulador.cs</FileName>
+      <HashCode>AAAAACAQAAQAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>ColeccionPuntoCarga.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ocpp_cliente_modelo.Cliente">
+    <Position X="6.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAIAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>Cliente.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="ColeccionElectrolinera" />
+      <Property Name="ColeccionEstacion" />
     </ShowAsAssociation>
   </Class>
-  <Class Name="ocpp_cliente_modelo.Coleccion">
-    <Position X="6.5" Y="0.75" Width="1.5" />
+  <Class Name="ocpp_cliente_modelo.Estacion">
+    <Position X="6.25" Y="6.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAQAEQAgAAAAAEAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAACAAAAAAAAAAAAACABgIAAAAAAAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>Estacion.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ocpp_cliente_modelo.ColeccionEstacion">
+    <Position X="6.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAQAAQAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>ColeccionEstacion.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ocpp_cliente_modelo.Coleccion&lt;T&gt;">
+    <Position X="15.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Coleccion.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="ocpp_cliente_modelo.ColeccionElectrolinera">
-    <Position X="2.5" Y="2.5" Width="2" />
+  <Class Name="ocpp_cliente_modelo.Reserva">
+    <Position X="12.75" Y="9" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>ColeccionElectrolinera.cs</FileName>
-    </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="Electrolinera" />
-    </ShowAsAssociation>
-  </Class>
-  <Class Name="ocpp_cliente_modelo.Configuracion">
-    <Position X="7.5" Y="4.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAgAAAAAAIAAAAAAAAAAAAAAAAAAAgAAAAAACACAA=</HashCode>
-      <FileName>Configuracion.cs</FileName>
+      <HashCode>AAACAAAAAAAgAAAAAAAAIAQAAAAAAAAAACAAASAAAAg=</HashCode>
+      <FileName>Reserva.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="ocpp_cliente_modelo.ColeccionSensor">
-    <Position X="3" Y="7.75" Width="1.5" />
+  <Class Name="ocpp_cliente_modelo.IteradorColeccionPuntoCarga">
+    <Position X="12.25" Y="0.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>IteradorColeccionPuntoCarga.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ocpp_cliente_modelo.IteradorColeccionEstacion">
+    <Position X="9.25" Y="0.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>IteradorColeccionEstacion.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="ocpp_cliente_modelo.IClonacion&lt;T&gt;">
+    <Position X="3" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IClonacion.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ocpp_cliente_modelo.IIterable&lt;I&gt;">
+    <Position X="18.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IIterable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ocpp_cliente_modelo.IIterador&lt;T&gt;">
+    <Position X="17" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>IIterador.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ocpp_cliente_modelo.IColeccion&lt;T&gt;">
+    <Position X="16" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAQAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>IColeccion.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ocpp_cliente_modelo.IColeccionGenerica&lt;T, I&gt;">
+    <Position X="14.25" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>ColeccionSensor.cs</FileName>
+      <FileName>IColeccionGenerica.cs</FileName>
     </TypeIdentifier>
-  </Class>
-  <Class Name="ocpp_cliente_modelo.Sensor">
-    <Position X="3" Y="9.5" Width="1.5" />
+  </Interface>
+  <Enum Name="ocpp_cliente_modelo.EEstadoPuntoCarga">
+    <Position X="12.75" Y="6.5" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAgAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Sensor.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="ocpp_cliente_modelo.ColeccionLogs">
-    <Position X="0.5" Y="7.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>ColeccionLogs.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="ocpp_cliente_modelo.ColeccionTags">
-    <Position X="5.5" Y="7.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>ColeccionTags.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Enum Name="ocpp_cliente_modelo.EnumEstado">
-    <Position X="0.5" Y="5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAABAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAg=</HashCode>
-      <FileName>EnumEstado.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAAgAIAAAAAAAAAAAAg=</HashCode>
+      <FileName>EEstadoPuntoCarga.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Font Name="Segoe UI" Size="9" />

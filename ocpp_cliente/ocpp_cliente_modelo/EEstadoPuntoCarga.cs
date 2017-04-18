@@ -5,7 +5,11 @@ using System.Text;
 
 namespace ocpp_cliente_modelo
 {
-    public class ColeccionLogs
+    public enum EEstadoPuntoCarga
     {
+        CARGANDO = 1,
+        DESOCUPADO = 2,
+        OPERATIVO = 3,
+        RESERVADO = 4
     }
 }

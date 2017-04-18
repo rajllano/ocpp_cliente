@@ -5,33 +5,20 @@ using System.Text;
 
 namespace ocpp_cliente_modelo
 {
-    public class Coleccion : ColeccionSensor
+    public class Coleccion<T>
     {
-        private List<Object> Lista;
+        public List<T> Lista { get; set; }
 
         public Coleccion()
         {
-            Lista = new List<object>();
+            this.Lista = new List<T>();
         }
 
-        public void Agregar(Object o)
+        ~Coleccion()
         {
-            Lista.Add(o);
-        }
+            this.Lista = null;
 
-        public void Eliminar(Object o)
-        {
-            Lista.Remove(o);
-        }
-
-        public Object Elemento(int Indice)
-        {
-            return Lista[Indice];
-        }
-
-        public int Size()
-        {
-            return Lista.Count;
+            GC.Collect();
         }
     }
 }
