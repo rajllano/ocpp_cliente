@@ -79,30 +79,7 @@ namespace ocpp_cliente_modelo
             }
         }
 
-        public ColeccionLogs ColeccionLogs
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-
-            set
-            {
-            }
-        }
-
-        public ColeccionTags ColeccionTags
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-
-            set
-            {
-            }
-        }
-
+       
         public EEstadoPuntoCarga EEstadoPuntoCarga
         {
             get

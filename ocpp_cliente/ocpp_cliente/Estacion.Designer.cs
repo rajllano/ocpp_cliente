@@ -49,6 +49,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -99,6 +100,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.button3);
             this.tabPage1.Controls.Add(this.label5);
             this.tabPage1.Controls.Add(this.label4);
             this.tabPage1.Controls.Add(this.pictureBox3);
@@ -222,7 +224,7 @@
             this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button4.Location = new System.Drawing.Point(6, 115);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(109, 23);
+            this.button4.Size = new System.Drawing.Size(72, 23);
             this.button4.TabIndex = 51;
             this.button4.Text = "Inicar Carga";
             this.button4.UseVisualStyleBackColor = true;
@@ -230,9 +232,9 @@
             // button1
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(124, 115);
+            this.button1.Location = new System.Drawing.Point(84, 115);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(109, 23);
+            this.button1.Size = new System.Drawing.Size(72, 23);
             this.button1.TabIndex = 52;
             this.button1.Text = "Cancelar Carga";
             this.button1.UseVisualStyleBackColor = true;
@@ -240,9 +242,9 @@
             // button2
             // 
             this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.Location = new System.Drawing.Point(240, 115);
+            this.button2.Location = new System.Drawing.Point(161, 115);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(109, 23);
+            this.button2.Size = new System.Drawing.Size(72, 23);
             this.button2.TabIndex = 53;
             this.button2.Text = "Transpasar Carga";
             this.button2.UseVisualStyleBackColor = true;
@@ -250,9 +252,9 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::ocpp_cliente.Properties.Resources.estacio;
-            this.pictureBox3.Location = new System.Drawing.Point(11, 154);
+            this.pictureBox3.Location = new System.Drawing.Point(6, 144);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(216, 155);
+            this.pictureBox3.Size = new System.Drawing.Size(227, 165);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 54;
             this.pictureBox3.TabStop = false;
@@ -299,6 +301,16 @@
             this.label4.Size = new System.Drawing.Size(111, 44);
             this.label4.TabIndex = 57;
             this.label4.Text = "kW/h";
+            // 
+            // button3
+            // 
+            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button3.Location = new System.Drawing.Point(239, 115);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(72, 23);
+            this.button3.TabIndex = 59;
+            this.button3.Text = "Parar Carga";
+            this.button3.UseVisualStyleBackColor = true;
             // 
             // Estacion
             // 
@@ -352,5 +364,6 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button button3;
     }
 }

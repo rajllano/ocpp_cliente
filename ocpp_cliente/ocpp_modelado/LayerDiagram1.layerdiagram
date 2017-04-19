@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="24e4399a-c022-4159-b3ed-7e38bff01a90" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <layers>
+    <layer Id="c82d4d63-20d4-4072-8ab7-82146211d598" name="GUI - Cliente">
+      <childLayers>
+        <layer Id="87674979-827f-4ac4-97c7-0dc093b0ce19" name="Gestión de Puntos de Carga" />
+        <layer Id="27f68b51-137b-4069-a10a-ad7be856e7ee" name="Logs de Puntos de Carga" />
+      </childLayers>
+    </layer>
+    <layer Id="6400902c-1ef2-4376-b3c9-3555faef5fe8" name="Controlador">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="976e0fb2-2446-4039-bdb1-c85f3eeadf91" direction="Bidirectional">
+          <layerMoniker Id="c82d4d63-20d4-4072-8ab7-82146211d598" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="c03c52c0-ea4b-47e7-859c-2e784467d1dc" direction="Bidirectional">
+          <layerMoniker Id="ac5c7423-8711-4d2b-b6aa-103689cbddb5" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="845fdbd4-a690-4886-81f0-5a91b013bc9a" direction="Bidirectional">
+          <layerMoniker Id="84157d6c-4b3e-4033-9af2-98f8308f1a62" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <childLayers>
+        <layer Id="ce2a74ad-b1d3-4f41-9a99-298d1d1a9d9d" name="Controlador de Puntos de Carga">
+          <childLayers>
+            <layer Id="897be2df-2b6d-4a0c-9de2-003ab3ba3478" name="Crear" />
+            <layer Id="c3cbca3c-79dd-46fe-b512-b7078bace67b" name="Eliminar" />
+            <layer Id="073b64a1-81ed-4dfd-8648-a03279b78d0c" name="...." />
+          </childLayers>
+        </layer>
+        <layer Id="c213f67f-919d-4a7a-8f7d-7175808e86a4" name="Controlador de Estaciones">
+          <childLayers>
+            <layer Id="15aeedbb-d346-4d0b-b835-481cd3db52d6" name="Crear" />
+            <layer Id="a7eafd64-eda9-428e-802b-53054e525801" name="Eliminar" />
+            <layer Id="8b68d57f-6049-4011-a040-9853530546cf" name="...." />
+          </childLayers>
+        </layer>
+        <layer Id="21f84d7d-4595-47cf-9e94-7dd798165441" name="Controlador de reservas">
+          <childLayers>
+            <layer Id="b9d17baa-130f-409b-bddc-2d5ea76a53d3" name="Crear" />
+            <layer Id="e744f398-81de-444e-89fe-dd3a7d25dfdf" name="Eliminar" />
+            <layer Id="1a62e6c5-a835-40bb-84a5-081fe0da7493" name="...." />
+          </childLayers>
+        </layer>
+      </childLayers>
+    </layer>
+    <layer Id="ac5c7423-8711-4d2b-b6aa-103689cbddb5" name="Conexión - WebSocket">
+      <childLayers>
+        <layer Id="2818d9f0-9f28-4fdd-8a42-70eb577ab754" name="Serialización Json" />
+        <layer Id="97df2006-8128-4398-a026-ca32496c0159" name="Des serialización Json" />
+      </childLayers>
+    </layer>
+    <layer Id="84157d6c-4b3e-4033-9af2-98f8308f1a62" name="Modelo" />
+  </layers>
+</layerModel>
