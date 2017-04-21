@@ -15,8 +15,8 @@
         <dependencyFromLayerToLayer Id="c03c52c0-ea4b-47e7-859c-2e784467d1dc" direction="Bidirectional">
           <layerMoniker Id="ac5c7423-8711-4d2b-b6aa-103689cbddb5" />
         </dependencyFromLayerToLayer>
-        <dependencyFromLayerToLayer Id="845fdbd4-a690-4886-81f0-5a91b013bc9a" direction="Bidirectional">
-          <layerMoniker Id="84157d6c-4b3e-4033-9af2-98f8308f1a62" />
+        <dependencyFromLayerToLayer Id="df6d3cf6-d362-4b53-8ff1-15bb223633de" direction="Bidirectional">
+          <layerMoniker Id="2746ed9a-045a-4c40-9c97-3d2f59321b3a" />
         </dependencyFromLayerToLayer>
       </dependencyToLayers>
       <childLayers>
@@ -49,6 +49,18 @@
         <layer Id="97df2006-8128-4398-a026-ca32496c0159" name="Des serialización Json" />
       </childLayers>
     </layer>
-    <layer Id="84157d6c-4b3e-4033-9af2-98f8308f1a62" name="Modelo" />
+    <layer Id="2746ed9a-045a-4c40-9c97-3d2f59321b3a" name="Modelo">
+      <childLayers>
+        <layer Id="7774a1ca-7697-4954-b2e7-592e36e7e850" name="Vehiculos" />
+        <layer Id="4f9ebbc4-f30e-49c8-9fd3-6cae5a8b3f7d" name="Reservas" />
+        <layer Id="56e7cd72-1090-4c50-ae30-e9cfc5fc7943" name="Estaciones" />
+        <layer Id="204d2cec-bf97-4359-896f-9f5c7ffd483e" name="Puntos de Carga" />
+        <layer Id="3f46bb5d-dfb9-43c3-92fb-1d35d23b5306" name="Logs" />
+        <layer Id="b2bcf4b2-8caa-4af9-bfe6-d0b81bf52e5d" name="Colecciones" />
+        <layer Id="a13ca227-a324-429c-93ee-c8a0e0cdebd0" name="Iteradores" />
+        <layer Id="7526e3ff-fb17-46d2-a2c2-4ef02ca9c327" name="Observadores" />
+        <layer Id="9bc9b431-25f1-4da0-bfad-cad0f5af3482" name="Clonadores" />
+      </childLayers>
+    </layer>
   </layers>
 </layerModel>
