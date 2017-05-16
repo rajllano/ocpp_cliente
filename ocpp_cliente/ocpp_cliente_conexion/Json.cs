@@ -13,7 +13,7 @@ namespace ocpp_cliente_conexion
 
         public void Serializar()
         {
-            Cliente c = new Cliente();
+            /*Cliente c = new Cliente();
 
             c.Nombre = "Orlando";
             c.Apellido = "Dominguez";
@@ -22,17 +22,17 @@ namespace ocpp_cliente_conexion
 
             Console.WriteLine("SERIALIZAR-------------------");
             Console.WriteLine(Cadena);
-            Console.WriteLine("-----------------------------");
+            Console.WriteLine("-----------------------------");*/
         }
 
         public void DesSerializar()
         {
-            Cliente c = JsonConvert.DeserializeObject<Cliente>(Cadena);
+            /*Cliente c = JsonConvert.DeserializeObject<Cliente>(Cadena);
 
             Console.WriteLine("DESSERIALIZAR----------------");
             Console.WriteLine(c.Nombre);
             Console.WriteLine(c.Apellido);
-            Console.WriteLine("-----------------------------");
+            Console.WriteLine("-----------------------------");*/
         }
     }
 }
