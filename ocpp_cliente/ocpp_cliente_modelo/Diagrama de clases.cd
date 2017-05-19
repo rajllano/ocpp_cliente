@@ -3,13 +3,9 @@
   <Class Name="ocpp_cliente_modelo.PuntoCarga">
     <Position X="9.5" Y="6.25" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAAAABAAAAAEAAAAEAABQAAAAQAAAACAAAhAAAAAAEA=</HashCode>
+      <HashCode>AAACABAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAEA=</HashCode>
       <FileName>PuntoCarga.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="EEstadoPuntoCarga" />
-    </ShowAsAssociation>
-    <Lollipop Position="0.2" />
   </Class>
   <Class Name="ocpp_cliente_modelo.ColeccionPuntoCarga">
     <Position X="9.5" Y="3.25" Width="2" />
@@ -55,7 +51,7 @@
   <Class Name="ocpp_cliente_modelo.Reserva">
     <Position X="12.75" Y="9" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAACAAAAAAAgAAAAAAAAIAQAAAAAAAAAACAAASAAAAg=</HashCode>
+      <HashCode>AAACAAAAAAAAAAAAAAAAIAQAAAAAAAQAACAQASAAAAA=</HashCode>
       <FileName>Reserva.cs</FileName>
     </TypeIdentifier>
   </Class>

@@ -4,6 +4,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ocpp_cliente_conexion;
+using ocpp_cliente_modelo;
+using ocpp_cliente_control;
 
 namespace ocpp_cliente_conexion
 {
@@ -13,9 +16,12 @@ namespace ocpp_cliente_conexion
 
         public void Serializar()
         {
-            /*Cliente c = new Cliente();
+            /*Reserva c = new Reserva();
 
-            c.Nombre = "Orlando";
+            c.Id = "Orlando";
+            c.PuntoCarga.NumeroSerie = ;
+            c.Vehiculo.Placa = ;
+            c.FechaRegistro = 
             c.Apellido = "Dominguez";
 
             Cadena = JsonConvert.SerializeObject(c);
@@ -33,6 +39,14 @@ namespace ocpp_cliente_conexion
             Console.WriteLine(c.Nombre);
             Console.WriteLine(c.Apellido);
             Console.WriteLine("-----------------------------");*/
+
+            Reserva c = new Reserva();
+
+            c.Id = "Orlando";
+            c.PuntoCarga.NumeroSerie = ;
+            c.Vehiculo.Placa = ;
+            c.FechaRegistro =
+
         }
     }
 }

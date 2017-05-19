@@ -16,7 +16,7 @@ namespace ocpp_cliente
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new prueba());
+            Application.Run(new Estacion());
         }
     }
 }

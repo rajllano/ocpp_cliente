@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>ocpp_cliente.Program</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -54,18 +57,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="prueba.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="prueba.Designer.cs">
-      <DependentUpon>prueba.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Simulador.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Simulador.Designer.cs">
-      <DependentUpon>Simulador.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="Estacion.resx">
       <DependentUpon>Estacion.cs</DependentUpon>
     </EmbeddedResource>
@@ -79,12 +70,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="prueba.resx">
-      <DependentUpon>prueba.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Simulador.resx">
-      <DependentUpon>Simulador.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -99,10 +84,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ocpp_cliente_conexion\ocpp_cliente_conexion.csproj">
-      <Project>{2aee4825-f17b-4c37-ab9b-71cd7185c7ae}</Project>
-      <Name>ocpp_cliente_conexion</Name>
-    </ProjectReference>
     <ProjectReference Include="..\ocpp_cliente_control\ocpp_cliente_control.csproj">
       <Project>{7460064c-c537-4f08-b1bf-b62ce8a75b75}</Project>
       <Name>ocpp_cliente_control</Name>

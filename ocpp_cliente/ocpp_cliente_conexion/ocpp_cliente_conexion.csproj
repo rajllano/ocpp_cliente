@@ -54,6 +54,16 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ocpp_cliente_control\ocpp_cliente_control.csproj">
+      <Project>{7460064c-c537-4f08-b1bf-b62ce8a75b75}</Project>
+      <Name>ocpp_cliente_control</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ocpp_cliente_modelo\ocpp_cliente_modelo.csproj">
+      <Project>{c03f64d6-bdeb-450a-8ba4-32e848b4ae2a}</Project>
+      <Name>ocpp_cliente_modelo</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
