@@ -8,15 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using NetworksApi.TCP.CLIENT;
 using System.Net;
+using ocpp_cliente_modelo;
 
 namespace ocpp_cliente_control
 {
     public static class Conexion
     {
         private static Client objClient = null;
+        public static ReservaJson listadoReserva2 = null;
 
         public static void IniciarCliente(string vIPPuntoCarga, string vIPServidor, string vPuertoServidor)
         {
+            listadoReserva2 = new ReservaJson();
             objClient = new Client();
             objClient.ClientName = vIPPuntoCarga;
             objClient.ServerIp = vIPServidor;
@@ -57,6 +60,9 @@ namespace ocpp_cliente_control
         private static void objCliente_OnDataReceived(object Sender, ClientReceivedArguments R)
         {
             Console.WriteLine(R.ReceivedData);
+            Console.WriteLine("recibio reserva");
+            ReservaJson rev =  Json.DeserializarReservasMartillado(R.ReceivedData);
+            listadoReserva2 = rev;
         }
 
         public static void desconectarCliente()

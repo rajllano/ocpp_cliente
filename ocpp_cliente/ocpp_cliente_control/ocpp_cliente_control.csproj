@@ -31,7 +31,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="NetworksApi">
-      <HintPath>..\..\..\..\..\..\Downloads\NetworksApi.dll</HintPath>
+      <HintPath>..\..\..\..\..\Documents\Visual Studio 2015\Projects\WebSocketServerClient\WebSocketServerClient\bin\Debug\NetworksApi.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.10.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
@@ -52,16 +52,16 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ocpp_cliente_modelo\ocpp_cliente_modelo.csproj">
-      <Project>{c03f64d6-bdeb-450a-8ba4-32e848b4ae2a}</Project>
-      <Name>ocpp_cliente_modelo</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ocpp_cliente_modelo\ocpp_cliente_modelo.csproj">
+      <Project>{C03F64D6-BDEB-450A-8BA4-32E848B4AE2A}</Project>
+      <Name>ocpp_cliente_modelo</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

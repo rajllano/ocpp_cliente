@@ -10,22 +10,38 @@ using NetworksApi.TCP.CLIENT;
 
 namespace ocpp_cliente_control
 {
-    public class Json
+    public static class Json
     {
-        private string Cadena;
+        private static string Cadena;
 
-        public Reserva DeserializarReservas(string vNumeroSeriePuntoCarga)
+        public static Reserva DeserializarReservas(string vNumeroSeriePuntoCarga)
         {
             PuntoCarga p = new PuntoCarga();
             p.NumeroSerie = vNumeroSeriePuntoCarga;
-            Conexion.enviarMensajeServidor("SOL_RESERVA" + JsonConvert.SerializeObject(p));
+            Conexion.enviarMensajeServidor(JsonConvert.SerializeObject(p));
+
+
             Reserva c = new Reserva();           
             return c;           
         }
 
-        public void DesSerializar()
+        public static void DesSerializar()
         {  
             Cliente c = JsonConvert.DeserializeObject<Cliente>(Cadena);
+        }
+
+        public static string SerializarReserva(ReservaJson objReserva)
+        {
+            ReservaJson c = new ReservaJson();
+            Cadena = JsonConvert.SerializeObject(objReserva);
+            return Cadena;
+        }
+
+        public static ReservaJson DeserializarReservasMartillado(string pCadena)
+        {
+            ReservaJson p = JsonConvert.DeserializeObject<ReservaJson>(pCadena);
+            
+            return p;
         }
     }
 }

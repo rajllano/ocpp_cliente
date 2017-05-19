@@ -84,6 +84,15 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\ocpp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\estacio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\ocpp_cliente_control\ocpp_cliente_control.csproj">
       <Project>{7460064c-c537-4f08-b1bf-b62ce8a75b75}</Project>
       <Name>ocpp_cliente_control</Name>
@@ -92,12 +101,6 @@
       <Project>{c03f64d6-bdeb-450a-8ba4-32e848b4ae2a}</Project>
       <Name>ocpp_cliente_modelo</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ocpp.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\estacio.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -33,20 +33,21 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button3 = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lblValorCarga = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.button4 = new System.Windows.Forms.Button();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.dgReserva = new System.Windows.Forms.DataGridView();
             this.label15 = new System.Windows.Forms.Label();
             this.txtNumeroSerie = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btConectar = new System.Windows.Forms.Button();
+            this.btCargar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgReserva)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -104,16 +105,17 @@
             this.button3.Text = "Parar Carga";
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // label5
+            // lblValorCarga
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.label5.Location = new System.Drawing.Point(245, 345);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(80, 37);
-            this.label5.TabIndex = 65;
-            this.label5.Text = "XXX";
+            this.lblValorCarga.AutoSize = true;
+            this.lblValorCarga.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblValorCarga.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.lblValorCarga.Location = new System.Drawing.Point(245, 345);
+            this.lblValorCarga.Name = "lblValorCarga";
+            this.lblValorCarga.Size = new System.Drawing.Size(80, 37);
+            this.lblValorCarga.TabIndex = 65;
+            this.lblValorCarga.Text = "XXX";
+            this.lblValorCarga.Visible = false;
             // 
             // label4
             // 
@@ -146,24 +148,24 @@
             this.button4.Text = "Inicar Carga";
             this.button4.UseVisualStyleBackColor = true;
             // 
-            // dataGridView3
+            // dgReserva
             // 
-            this.dataGridView3.AllowUserToAddRows = false;
-            this.dataGridView3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dgReserva.AllowUserToAddRows = false;
+            this.dgReserva.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(12, 155);
-            this.dataGridView3.MultiSelect = false;
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.ReadOnly = true;
-            this.dataGridView3.RowHeadersVisible = false;
-            this.dataGridView3.ShowCellErrors = false;
-            this.dataGridView3.ShowCellToolTips = false;
-            this.dataGridView3.ShowEditingIcon = false;
-            this.dataGridView3.ShowRowErrors = false;
-            this.dataGridView3.Size = new System.Drawing.Size(355, 130);
-            this.dataGridView3.TabIndex = 61;
+            this.dgReserva.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgReserva.Location = new System.Drawing.Point(12, 155);
+            this.dgReserva.MultiSelect = false;
+            this.dgReserva.Name = "dgReserva";
+            this.dgReserva.ReadOnly = true;
+            this.dgReserva.RowHeadersVisible = false;
+            this.dgReserva.ShowCellErrors = false;
+            this.dgReserva.ShowCellToolTips = false;
+            this.dgReserva.ShowEditingIcon = false;
+            this.dgReserva.ShowRowErrors = false;
+            this.dgReserva.Size = new System.Drawing.Size(355, 130);
+            this.dgReserva.TabIndex = 61;
             // 
             // label15
             // 
@@ -200,20 +202,32 @@
             this.btConectar.UseVisualStyleBackColor = true;
             this.btConectar.Click += new System.EventHandler(this.btConectar_Click);
             // 
+            // btCargar
+            // 
+            this.btCargar.Enabled = false;
+            this.btCargar.Location = new System.Drawing.Point(275, 397);
+            this.btCargar.Name = "btCargar";
+            this.btCargar.Size = new System.Drawing.Size(75, 23);
+            this.btCargar.TabIndex = 70;
+            this.btCargar.Text = "Cargar";
+            this.btCargar.UseVisualStyleBackColor = true;
+            this.btCargar.Click += new System.EventHandler(this.btCargar_Click);
+            // 
             // Estacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(377, 439);
+            this.Controls.Add(this.btCargar);
             this.Controls.Add(this.btConectar);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtNumeroSerie);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.lblValorCarga);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.dataGridView3);
+            this.Controls.Add(this.dgReserva);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.panel1);
             this.Name = "Estacion";
@@ -224,7 +238,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgReserva)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -237,14 +251,15 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblValorCarga;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.DataGridView dgReserva;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox txtNumeroSerie;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btConectar;
+        private System.Windows.Forms.Button btCargar;
     }
 }
